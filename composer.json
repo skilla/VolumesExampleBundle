@@ -1,0 +1,68 @@
+{
+    "name": "skilla/volumes-example-bundle",
+    "description": Example of good practice programming a calculation of intersections of cubes or rectangular orthohedrons. Ejemplo de buenas practicas programando un cálculo de intersecciones de cubos o ortoedros rectangulares.",
+    "keywords": [
+        "cube",
+        "cuboid",
+        "intersection",
+        "volumes"
+    ],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergio Zambrano Delfa",
+            "email": "sergio.zambrano@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Skilla\\VolumesExampleBundle\\": "src/Bundle/"
+        },
+        "classmap": [
+            "app/AppKernel.php"
+        ],
+        "exclude-from-classmap": [
+            "src/Bundle/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Skilla\\VolumesExampleBundle\\Tests\\": "src/Bundle/Tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "beberlei/assert": "^2.7"
+    },
+    "require-dev": {
+        "symfony/http-kernel": "~2.8.12 || ~3.1.0",
+        "symfony/framework-bundle": "~2.8.12 || ~3.1.0",
+        "symfony/console": "~2.8.12 || ~3.1.0",
+        "sensio/framework-extra-bundle": "^2.3 || ^3.0",
+        "phpunit/phpunit": "~4.8.26 || ~5.6.0",
+        "incenteev/composer-parameter-handler": "^2.1"
+    },
+    "scripts": {
+        "symfony-scripts": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ],
+        "post-install-cmd": [
+            "@symfony-scripts"
+        ],
+        "post-update-cmd": [
+            "@symfony-scripts"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "symfony-assets-install": "relative",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
+    }
+}

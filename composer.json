@@ -1,6 +1,6 @@
 {
     "name": "skilla/volumes-example-bundle",
-    "description": Example of good practice programming a calculation of intersections of cubes or rectangular orthohedrons. Ejemplo de buenas practicas programando un cálculo de intersecciones de cubos o ortoedros rectangulares.",
+    "description": "Example of good practice programming a calculation of intersections of cubes or rectangular orthohedrons. Ejemplo de buenas practicas programando un cálculo de intersecciones de cubos o ortoedros rectangulares.",
     "keywords": [
         "cube",
         "cuboid",

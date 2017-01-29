@@ -14,7 +14,7 @@ before_script:
 install:
     - composer install
 
-script: bin/phpunit -c src/phpunit.xml --coverage-clover=coverage.xml
+script: bin/phpunit -c app/phpunit.xml --coverage-clover=coverage.xml
 
 after_success:
     - bash <(curl -s https://codecov.io/bash)
